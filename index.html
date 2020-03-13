@@ -19,12 +19,20 @@
     <title>Wahyu</title>
   </head>
   <body>
-
-    <nav class="navigasi fixed-top  d-none d-md-block" >
+    <nav class="navigasi fixed-top  " >
       <div class="container">
-        <div class="logo">
-          <h4>Wahyu Nur Arizky</h4>
-        </div>
+        
+
+        <a href="#" class="h4 logo">
+          Wahyu Nur Arizky
+        </a>
+
+        <a class="d-md-none button-line">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </a>
+        
         <ul class="nav-container">
           <li class="nav-item"><a href="">About</a></li>
           <li class="nav-item"><a href="">Services</a></li>
@@ -189,6 +197,8 @@
     <script>
       const nav = document.querySelector('.navigasi');
       const back2Top = document.querySelector('#back2Top');
+      const buttonLine = document.querySelector('.button-line');
+      const navcon = document.querySelector('.nav-container');
       window.addEventListener('scroll', function(){
         if(this.scrollY > 0){
           nav.classList.add('bg-black');
@@ -214,6 +224,10 @@
 
       back2Top.addEventListener('click', function(){
         scrollToTopp(500);
+      });
+
+      buttonLine.addEventListener('click', function(){
+        navcon.classList.toggle('click');
       });
 
       

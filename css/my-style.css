@@ -15,7 +15,10 @@ nav .container{
 	align-items: center;
 }
 
-.logo h4{
+
+.logo, .logo:hover{
+	text-decoration: none;
+	color: white;
 	font-size: 27px;
 	font-weight: bold;
 }
@@ -49,6 +52,9 @@ nav.bg-black{
 }
 nav.bg-black a{
 	color: #780A1B;
+}
+nav.bg-black .line{
+	background-color: #780A1B;
 }
 
 
@@ -102,8 +108,6 @@ header.mantap{
 /*=====================================================================================================*/
 
 
-
-
 .carousel h5{
 	font-size: 50px;
 }
@@ -147,6 +151,7 @@ section{
 .bg-whitee .judul{
 	color: #780A1B;
 }
+
 
 
 
@@ -342,4 +347,60 @@ section .judul{
 
 footer{
 	background: #151e27;
+}
+
+
+
+
+
+/*=====================================================================================================*/
+/*=====================================================================================================*/
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .nav-container{
+  	position: fixed;
+  	display: none;
+  	flex-direction: column;
+  	background-color: black;
+  	z-index: 2;
+  	justify-content: center;
+  	width: 100%;
+  	top: 0;
+  	left: 0;
+
+	transition: 1s;
+  	height: 100%;
+  }
+  .nav-container.click{
+	display: flex;
+  }
+}
+
+
+
+
+
+/*=====================================================================================================*/
+/*=====================================================================================================*/
+
+
+
+.button-line{
+	display: inline-block;
+	position: absolute;
+	z-index:3;
+	right: 15px;
+	
+	margin-left: auto;
+	cursor: pointer;
+}
+
+.line{
+	width: 30px;
+	height: 3px;
+	background-color: #fff;
+	margin-bottom: 5px;
 }
