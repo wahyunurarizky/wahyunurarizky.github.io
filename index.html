@@ -34,7 +34,7 @@
         </a>
         
         <ul class="nav-container">
-          <li class="nav-item"><a href="">About</a></li>
+          <li class="nav-item"><a class="mantap" href="#about">About</a></li>
           <li class="nav-item"><a href="">Services</a></li>
           <li class="nav-item"><a href="">Portfolio</a></li>
           <li class="nav-item"><a href="">Contact</a></li>
@@ -116,10 +116,39 @@
 
     <section id="services" class="bg-whitee">
       <div class="container">
-        <h1 class="text-center judul">My Services</h1>
-        <div class="circle">
-          <h1>codrops</h1>
+        <div class="row py-5">
+          <div class="text-center col-md-4">
+            <i class="d-block fas fa-laptop-code fa-5x"></i>
+            <p>web developer</p>
+            <div class=" my-4 progress">
+              <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
+            </div>
+            <p class="text-justify">
+              saya seorang web developer dengan pemograman back-end PHP, dan mengusai framework code-igniter. serta saya menguasai github dan sql
+            </p>
+          </div>
+          <div class="text-center col-md-4">
+            <i class="fas fa-magic fa-5x"></i>
+            <p>web Design</p>
+            <div class="my-4 progress">
+              <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+            </div>
+            <p class="text-justify">
+              saya menguasai web desain berupa bahasa pemograman html, css dan javascript. serta menguasai beberapa framework front-end seperti jquery, bootstrap, materialize. 
+            </p>
+          </div>
+          <div class="text-center col-md-4">
+            <i class="fas fa-gamepad fa-5x"></i>
+            <p>Mobile Legends</p>
+            <div class="my-4 progress">
+              <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">100%</div>
+            </div>
+            <p class="text-justify">
+              saya adalah player mobil lejen. kuy mabar
+            </p>
+          </div>
         </div>
+
       </div>
     </section>
     <section id="portfolio">
@@ -190,7 +219,10 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+   <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     
@@ -199,6 +231,8 @@
       const back2Top = document.querySelector('#back2Top');
       const buttonLine = document.querySelector('.button-line');
       const navcon = document.querySelector('.nav-container');
+
+          
       window.addEventListener('scroll', function(){
         if(this.scrollY > 0){
           nav.classList.add('bg-black');
@@ -230,6 +264,13 @@
         navcon.classList.toggle('click');
       });
 
+
+      $(".mantap").click(function() {
+        console.log('mantap');
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $(`${this.getAttribute("href");}`).offset().top
+        }, 2000);
+      });
       
     </script>
   </body>
