@@ -1,423 +1,324 @@
-body{
-	background-color: #151E27;
-	color: #f4f4f4;
-	font-family: 'Caveat', cursive;
-	box-sizing: border-box;
+body {
+  background-color: #151e27;
+  color: #f4f4f4;
+  font-family: 'Caveat', cursive;
+  box-sizing: border-box;
 }
-nav{
-	background-color: none;
-	height: 12vh;
-	transition: 0.5s;
+nav {
+  background-color: none;
+  height: 12vh;
+  transition: 0.5s;
 }
-nav .container{
-	height: 100%;
-	display: flex;
-	align-items: center;
-}
-
-
-.logo, .logo:hover{
-	text-decoration: none;
-	color: white;
-	font-size: 27px;
-	font-weight: bold;
-}
-.nav-container{
-	margin-bottom: 0px;
-	width: 600px;
-	list-style: none;
-	display: flex;
-	margin-left: auto;
-	align-items: center;
-	justify-content: space-around;
+nav .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
-.nav-item{
-	cursor: pointer;
+.logo,
+.logo:hover {
+  text-decoration: none;
+  color: white;
+  font-size: 27px;
+  font-weight: bold;
 }
-.nav-item a{
-	font-size: 27px;
-	font-weight: bold;
-	text-decoration: none;
-	color: #FAFAFA;
-}
-
-header img{
-	max-height: 100vh;
-}
-
-nav.bg-black{
-	background: #f4f4f4;
-	color: #780A1B;
-}
-nav.bg-black a{
-	color: #780A1B;
-}
-nav.bg-black .line{
-	background-color: #780A1B;
+.nav-container {
+  margin-bottom: 0px;
+  width: 600px;
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  justify-content: space-around;
 }
 
+.nav-item {
+  cursor: pointer;
+}
+.nav-item a {
+  font-size: 27px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fafafa;
+}
 
+header img {
+  max-height: 100vh;
+}
+
+nav.bg-black {
+  background: #f4f4f4;
+  color: #780a1b;
+}
+nav.bg-black a {
+  color: #780a1b;
+}
+nav.bg-black .line {
+  background-color: #780a1b;
+}
 
 /*=====================================================================================================*/
 /*=====================================================================================================*/
 
-
-
-nav .nav-item ::after{
-	content: "";
-	display: block;
-	width: 0;
-	height: 2px;
-	margin: 0 auto;
-	background-color: #fff;
-	transition: 0.3s ease-out;
+nav .nav-item ::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  margin: 0 auto;
+  background-color: #fff;
+  transition: 0.3s ease-out;
 }
 
-nav .nav-item:hover a::after{
-	/*content: "";*/
-	/*display: block;*/
-	width: 100%;
-	/*height: 2px;*/
-	/*background-color: #fff;*/
+nav .nav-item:hover a::after {
+  /*content: "";*/
+  /*display: block;*/
+  width: 100%;
+  /*height: 2px;*/
+  /*background-color: #fff;*/
 }
-nav.bg-black .nav-item a::after{
-	background-color: #151e27;
-}
-
-
-
-
-
-/*=====================================================================================================*/
-/*=====================================================================================================*/
-
-
-
-
-header.mantap{
-	font-family: 'Caveat', cursive;
+nav.bg-black .nav-item a::after {
+  background-color: #151e27;
 }
 
-
-
-
-
-
 /*=====================================================================================================*/
 /*=====================================================================================================*/
 
-
-.carousel h5{
-	font-size: 50px;
-}
-.carousel p{
-	font-size: 20px;
+header.mantap {
+  font-family: 'Caveat', cursive;
 }
 
-
-
-
-
 /*=====================================================================================================*/
 /*=====================================================================================================*/
 
-
-
-
-section{
-	font-family: 'Roboto Mono', monospace;
-	box-sizing: border-box;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	min-height: 88vh;
+.carousel h5 {
+  font-size: 50px;
+}
+.carousel p {
+  font-size: 20px;
 }
 
-
-
-
-
-
 /*=====================================================================================================*/
 /*=====================================================================================================*/
 
-
-
-
-.bg-whitee{
-	background-color: #F4F4F4;
-	color: #151e27;
-}
-.bg-whitee .judul{
-	color: #780A1B;
+section {
+  font-family: 'Roboto Mono', monospace;
+  box-sizing: border-box;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  min-height: 88vh;
 }
 
-
-
-
-
-
 /*=====================================================================================================*/
 /*=====================================================================================================*/
 
+.bg-whitee {
+  background-color: #f4f4f4;
+  color: #151e27;
+}
+.bg-whitee .judul {
+  color: #780a1b;
+}
 
-
+/*=====================================================================================================*/
+/*=====================================================================================================*/
 
 #back2Top {
-    width: 40px;
-    line-height: 40px;
-    overflow: hidden;
-    z-index: 999;
-    display: none;
-    cursor: pointer;
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    background-color: #DDD;
-    color: #555;
-    text-align: center;
-    font-size: 30px;
-    text-decoration: none;
+  width: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-color: #ddd;
+  color: #555;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
 }
 #back2Top:hover {
-    background-color: #DDF;
-    color: #151e27;
+  background-color: #ddf;
+  color: #151e27;
 }
 
-
-
-
-
 /*=====================================================================================================*/
 /*=====================================================================================================*/
 
-
-div.foto-ku img{
-	-webkit-box-shadow: 1px 1px 1px rgb(0,0,0, .3);
-	box-shadow: 1px 1px 1px rgb(0,0,0, .3);
+div.foto-ku img {
+  -webkit-box-shadow: 1px 1px 1px rgb(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 1px rgb(0, 0, 0, 0.3);
 }
 
-
-
-
-
 /*=====================================================================================================*/
 /*=====================================================================================================*/
-
-
-
 
 .circle {
-	background: rgb(255,255,255);
-	border-radius: 50%;
-	cursor: pointer;
-	position: relative;
-	margin: 0 auto;
-	width: 15em; 
-	height: 15em;
-	/*overflow: hidden;*/
-	transform: translateZ(0);
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  margin: 0 auto;
+  width: 15em;
+  height: 15em;
+  /*overflow: hidden;*/
+  transform: translateZ(0);
 }
 
 .circle h1 {
-	color: rgba(189, 185, 199,0);
-	font-family: 'Lato', sans-serif;
-	font-weight: 900;
-	font-size: 1.6em;
-	line-height: 8.2em;
-	text-align: center;
-	text-transform: uppercase;
-	-webkit-font-smoothing: antialiased;
-	user-select: none;
-	transition: color 0.8s ease-in-out;
+  color: rgba(189, 185, 199, 0);
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 1.6em;
+  line-height: 8.2em;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+  transition: color 0.8s ease-in-out;
 }
 
 .circle:before,
 .circle:after {
-	border-radius: 100%;
-	content:"";
-	position: absolute;
-	top: 0; 
-	left: 0;
-	width: inherit; 
-	height: inherit;			
-	box-shadow: inset 10.6em 0 0 rgba(30, 140, 209, 0.2), 
-	            inset 0 10.6em 0 rgba(30, 140, 209, 0.2), 
-	            inset -10.6em 0 0 rgba(30, 140, 209, 0.2), 
-	            inset 0 -10.6em 0 rgba(30, 140, 209, 0.2);
-	transition: box-shadow 0.75s;
+  border-radius: 100%;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  box-shadow: inset 10.6em 0 0 rgba(30, 140, 209, 0.2),
+    inset 0 10.6em 0 rgba(30, 140, 209, 0.2),
+    inset -10.6em 0 0 rgba(30, 140, 209, 0.2),
+    inset 0 -10.6em 0 rgba(30, 140, 209, 0.2);
+  transition: box-shadow 0.75s;
 }
 
 /* We rotate the :after pseudo-element to get the edge from the corner, we could also just do that with box-shadows. */
 
-.circle:after  {
-	transform: rotate(45deg);
+.circle:after {
+  transform: rotate(45deg);
 }
 
 /* There is no problem using "pseudo-class + pseudo-element" :) */
 
 .circle:hover:before,
-.circle:hover:after  {
-	box-shadow: inset 0.86em 0 0 rgba(255, 0, 0, 0.5), 
-	            inset 0 0.86em 0 rgba(252, 150, 0, 0.5), 
-	            inset -0.86em 0 0 rgba(0, 255, 0, 0.5),	
-	            inset 0 -0.86em 0 rgba(0, 150, 255, 0.5);
+.circle:hover:after {
+  box-shadow: inset 0.86em 0 0 rgba(255, 0, 0, 0.5),
+    inset 0 0.86em 0 rgba(252, 150, 0, 0.5),
+    inset -0.86em 0 0 rgba(0, 255, 0, 0.5),
+    inset 0 -0.86em 0 rgba(0, 150, 255, 0.5);
 }
 
-.circle:hover > h1  {
-	color: rgba(185, 185, 185,1);
+.circle:hover > h1 {
+  color: rgba(185, 185, 185, 1);
 }
 
-
-
-
-
 /*=====================================================================================================*/
 /*=====================================================================================================*/
 
-
-
-section .judul{
-	font-family: 'Caveat', cursive;
-	color: #E17B4C;
-
-
+section .judul {
+  font-family: 'Caveat', cursive;
+  color: #e17b4c;
 }
 
-
-
-
-
 /*=====================================================================================================*/
 /*=====================================================================================================*/
 
-
-
-
-.tahun{
-	color: #E17B4C;
+.tahun {
+  color: #e17b4c;
 }
 
-
-
-
-
 /*=====================================================================================================*/
 /*=====================================================================================================*/
 
-
-
-
-.card{
-	color: black;
+.card {
+  color: black;
 }
 
-
-
-
-
 /*=====================================================================================================*/
 /*=====================================================================================================*/
 
-
-
-
-.contact-form{
-	border: 1px solid black;
+.contact-form {
+  border: 1px solid black;
 }
-.contact-me{
-	background: rgb(21,30,39);
-    background: linear-gradient(180deg, rgba(21,30,39,1) 0%, rgba(21,30,39,1) 0%, rgba(56,44,38,1) 100%);
+.contact-me {
+  background: rgb(21, 30, 39);
+  background: linear-gradient(
+    180deg,
+    rgba(21, 30, 39, 1) 0%,
+    rgba(21, 30, 39, 1) 0%,
+    rgba(56, 44, 38, 1) 100%
+  );
 }
 
-
-
-.contact-me a{
-	text-decoration: none;
-	color: white;
+.contact-me a {
+  text-decoration: none;
+  color: white;
 }
 
-
-
 /*=====================================================================================================*/
 /*=====================================================================================================*/
 
-
-
-
-footer{
-	background: #151e27;
+footer {
+  background: #151e27;
 }
 
-
-
-
-
 /*=====================================================================================================*/
 /*=====================================================================================================*/
-
-
-
 
 @media only screen and (max-width: 768px) {
-  .nav-container{
-  	position: fixed;
-  	display: none;
-  	flex-direction: column;
-  	background-color: black;
-  	z-index: 2;
-  	justify-content: center;
-  	width: 100%;
-  	top: 0;
-  	left: 0;
+  .nav-container {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    background-color: black;
+    z-index: 2;
+    justify-content: center;
+    width: 100%;
+    top: 0;
+    left: 0;
 
-	transition: 1s;
-  	height: 100%;
+    transition: 1s;
+    height: 100%;
   }
-  .nav-container.click{
-	display: flex;
+  .nav-container.click {
+    display: flex;
+  }
+  #contact {
+    padding-bottom: 0;
+    min-height: 0;
   }
 }
 
-
-
-
-
 /*=====================================================================================================*/
 /*=====================================================================================================*/
 
+.button-line {
+  display: inline-block;
+  position: absolute;
+  z-index: 3;
+  right: 15px;
 
-
-.button-line{
-	display: inline-block;
-	position: absolute;
-	z-index:3;
-	right: 15px;
-	
-	margin-left: auto;
-	cursor: pointer;
+  margin-left: auto;
+  cursor: pointer;
 }
 
-.line{
-	width: 30px;
-	height: 3px;
-	background-color: #fff;
-	margin-bottom: 5px;
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 5px;
 }
 
-.progress{
-background-color:#e2ebb0;
+.progress {
+  background-color: #e2ebb0;
 }
-
-
-
-
 
 /*=====================================================================================================*/
 /*=====================================================================================================*/
-
-
-
 
 body {
   scroll-behavior: smooth;
