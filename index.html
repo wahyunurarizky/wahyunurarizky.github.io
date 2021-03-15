@@ -261,6 +261,7 @@
       const back2Top = document.querySelector('#back2Top');
       const buttonLine = document.querySelector('.button-line');
       const navcon = document.querySelector('.nav-container');
+      const navitem = document.querySelectorAll('.nav-item');
 
           
       window.addEventListener('scroll', function(){
@@ -293,6 +294,13 @@
       buttonLine.addEventListener('click', function(){
         navcon.classList.toggle('click');
       });
+      navitem.forEach(el => {
+        el.addEventListener('click', function(){
+        navcon.classList.toggle('click');
+      });
+      })
+      
+      
 
 
       const navlink = document.querySelectorAll(".mantap");
