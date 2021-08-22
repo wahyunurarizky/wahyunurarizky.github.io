@@ -6,6 +6,7 @@ import Contact from './components/contact/Contact';
 import Testimonial from './components/testimonial/Testimonial';
 import Portfolio from './components/portfolio/Portfolio';
 import Works from './components/works/Works';
+import Footer from './components/footer/Footer';
 import Menu from './components/menu/Menu';
 import './app.scss';
 
@@ -21,6 +22,7 @@ function App() {
         <Works />
         <Testimonial />
         <Contact />
+        <Footer />
       </div>
     </div>
   );

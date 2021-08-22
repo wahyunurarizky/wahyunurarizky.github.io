@@ -1,0 +1,82 @@
+@import '../../global.scss';
+
+.footer {
+  background-color: $mainColor;
+  height: 200px !important;
+  @include mobile {
+    height: 400px !important;
+  }
+
+  .container {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 30%;
+    }
+
+    a {
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+
+      &:hover {
+        color: crimson;
+      }
+    }
+  }
+
+  h3 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    @include mobile {
+      padding-left: 30%;
+      justify-content: start;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+
+      &:hover {
+        color: crimson;
+      }
+
+      .ta {
+        margin-left: 10px;
+        display: inline-block;
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  p {
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+
+    .love {
+      color: crimson;
+      margin: 0 10px;
+      // display: inline-block;
+      // padding-bottom: 0;
+    }
+
+    .cp {
+      font-size: 17px;
+      margin-left: 10px;
+      margin-right: 5px;
+      // color: crimson;
+    }
+  }
+}
