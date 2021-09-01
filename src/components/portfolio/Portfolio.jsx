@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
 import './portfolio.scss';
 import PortfolioList from '../portfolioList/PortfolioList';
+import FadeIn from 'react-fade-in';
+import { ExitToApp, GitHub } from '@material-ui/icons';
+
 import {
   myProjectPort,
   teamProjectPort,
@@ -64,14 +67,25 @@ const Portfolio = () => {
           />
         ))}
       </ul>
-      <div className="container">
+      <FadeIn className="container">
         {data.map((d) => (
           <div className="item">
             <img src={d.img} alt="" />
-            <h3>{d.title} </h3>
+            <h3>
+              {d.title}
+
+              <div className="source">
+                <a target="blank" href={d.urlGithub}>
+                  <GitHub />
+                </a>
+                <a target="blank" href={d.url}>
+                  <ExitToApp />
+                </a>
+              </div>
+            </h3>
           </div>
         ))}
-      </div>
+      </FadeIn>
     </div>
   );
 };

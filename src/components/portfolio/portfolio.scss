@@ -83,6 +83,22 @@
         object-fit: cover;
         z-index: 1;
       }
+      .source {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+          margin-top: 10px;
+          margin-left: 10px;
+          margin-right: 10px;
+          text-decoration: none;
+          color: white;
+
+          &:hover {
+            color: crimson;
+          }
+        }
+      }
 
       &:hover {
         background-color: $mainColor;

@@ -3,19 +3,19 @@
 .footer {
   background-color: $mainColor;
   height: 200px !important;
-  @include mobile {
-    height: 400px !important;
-  }
 
   .container {
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     @include mobile {
-      flex-direction: column;
-      align-items: flex-start;
-      padding-left: 30%;
+      a {
+        span {
+          display: none;
+        }
+      }
     }
 
     a {
@@ -24,6 +24,9 @@
       align-items: center;
       text-decoration: none;
       color: white;
+      span {
+        margin-left: 5px;
+      }
 
       &:hover {
         color: crimson;
@@ -37,10 +40,6 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-    @include mobile {
-      padding-left: 30%;
-      justify-content: start;
-    }
 
     a {
       text-decoration: none;

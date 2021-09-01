@@ -9,6 +9,7 @@ import {
   WhatsApp,
   TouchApp,
   Mail,
+  GitHub,
 } from '@material-ui/icons';
 
 const Footer = () => {
@@ -16,22 +17,26 @@ const Footer = () => {
     <div className="footer">
       <div className="container">
         <a href="https://www.instagram.com/wahyunurarizky" target="blank">
-          <Instagram /> @wahyunurarizky
+          <Instagram />
+          <span>@wahyunurarizky</span>
         </a>
         <a href="mailto:wahyunurarizky18@gmail.com" target="blank">
-          <Mail /> wahyunurarizky18@gmail.com
+          <Mail /> <span>wahyunurarizky18@gmail.com</span>
         </a>
         <a href="https://wa.me/62895320298734" target="blank">
-          <WhatsApp /> +62 895 320298734
+          <WhatsApp /> <span>+62 895 320298734</span>
         </a>
         <a href="https://telegram.me/wahyunurarizky" target="blank">
-          <Telegram /> wahyunurarizky
+          <Telegram /> <span>wahyunurarizky</span>
         </a>
         <a
           href="https://www.linkedin.com/in/wahyu-nur-arizky-a47275168/"
           target="blank"
         >
-          <LinkedIn /> Wahyu Nur Arizky
+          <LinkedIn /> <span>Wahyu Nur Arizky</span>
+        </a>
+        <a href="https://www.github.com/wahyunurarizky" target="blank">
+          <GitHub /> <span>Wahyu Nur Arizky</span>
         </a>
       </div>
       <h3>
