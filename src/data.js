@@ -101,7 +101,7 @@ export const certification = [
   {
     id: 7,
     title: 'Database Design & Programming with SQL - Oracle Academy',
-    img: 'assets/serti1.png',
+    img: 'assets/serti-oracle.jpg',
   },
 ];
 
