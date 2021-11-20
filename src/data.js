@@ -108,7 +108,7 @@ export const certification = [
 export const otherPortfolio = [
   {
     id: 1,
-    title: 'Lorem Ipsum Dolor',
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU',
+    title: 'Tech Team - Intern YLABS.ID',
+    img: 'assets/serti-ylabs.jpg',
   },
 ];
