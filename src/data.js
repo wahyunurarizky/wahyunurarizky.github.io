@@ -25,7 +25,7 @@ export const myProjectPort = [
     title: 'Simple Box office with React',
     img: 'assets/port11.jpg',
     urlGithub: 'https://github.com/wahyunurarizky/box-office',
-    url: 'https://arzky.me/box-office',
+    url: 'https://wahyunuaraizky.github.io/box-office',
   },
   {
     id: 6,
@@ -39,7 +39,7 @@ export const myProjectPort = [
     title: 'Simple Portfolio With Bootstrap',
     img: 'assets/port9.png',
     urlGithub: 'https://github.com/wahyunurarizky/portfolio2',
-    url: 'https://arzky.me/portfolio2',
+    url: 'https://wahyunuaraizky.github.io/portfolio2',
   },
   {
     id: 5,
@@ -64,6 +64,13 @@ export const teamProjectPort = [
     img: 'assets/port62.jpg',
     urlGithub: '#',
     url: 'https://samter.mandiritunasmuda.co.id',
+  },
+  {
+    id: 3,
+    title: 'Puskarier UIN JKT Web App using react and laravel',
+    img: 'assets/port12.png',
+    urlGithub: '#',
+    url: 'https://puskarier.vercel.app',
   },
 ];
 
