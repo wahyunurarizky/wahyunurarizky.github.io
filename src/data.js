@@ -39,7 +39,7 @@ export const myProjectPort = [
     title: 'Simple Portfolio With Bootstrap',
     img: 'assets/port9.png',
     urlGithub: 'https://github.com/wahyunurarizky/portfolio2',
-    url: 'https://wahyunuaraizky.github.io/portfolio2',
+    url: 'https://wahyunurarizky.github.io/portfolio2',
   },
   {
     id: 5,
