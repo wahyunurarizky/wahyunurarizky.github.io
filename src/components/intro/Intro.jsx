@@ -1,9 +1,9 @@
-import './intro.scss';
-import { init } from 'ityped';
-import { useEffect, useRef } from 'react';
+import './intro.scss'
+import { init } from 'ityped'
+import { useEffect, useRef } from 'react'
 
 const Intro = () => {
-  const textRef = useRef();
+  const textRef = useRef()
 
   useEffect(() => {
     // console.log(textRef);
@@ -14,16 +14,16 @@ const Intro = () => {
         'Backend Engineer',
         'Web Developer',
         'Node JS Programmer',
-        'PHP Programmer',
-      ],
-    });
-  }, []);
+        'PHP Programmer'
+      ]
+    })
+  }, [])
 
   return (
     <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img src="assets/man3.png" alt="" />
+          <img src="assets/wahyu.png" alt="" />
         </div>
       </div>
       <div className="right">
@@ -39,7 +39,7 @@ const Intro = () => {
         </a>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Intro;
+export default Intro
