@@ -23,9 +23,6 @@ const Footer = () => {
         <a href="mailto:wahyunurarizky18@gmail.com" target="blank">
           <Mail /> <span>wahyunurarizky18@gmail.com</span>
         </a>
-        <a href="https://wa.me/62895320298734" target="blank">
-          <WhatsApp /> <span>+62 895 320298734</span>
-        </a>
         <a href="https://telegram.me/wahyunurarizky" target="blank">
           <Telegram /> <span>wahyunurarizky</span>
         </a>

@@ -10,10 +10,6 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
             Arzky.
           </a>
           <div className="itemContainer">
-            <Person className="icon" />
-            <span>+ 62 895 3202 98734</span>
-          </div>
-          <div className="itemContainer">
             <Mail className="icon" />
             <span>wahyunurarizky18@gmail.com</span>
           </div>
